@@ -3,7 +3,8 @@ var inputPhone = {
     placeholder: '@',
     label: '@',
     model: '=',
-    required: '@'
+    required: '@',
+    error: '='
   },
   templateUrl: './phone.html'
 };

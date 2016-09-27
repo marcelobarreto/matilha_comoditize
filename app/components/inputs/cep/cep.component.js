@@ -3,7 +3,8 @@ var inputCep = {
     placeholder: '@',
     label: '@',
     model: '=',
-    required: '@'
+    required: '@',
+    error: '='
   },
   templateUrl: './cep.html'
 };

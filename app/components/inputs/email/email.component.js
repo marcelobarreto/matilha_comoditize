@@ -3,7 +3,8 @@ var inputEmail = {
     placeholder: '@',
     label: '@',
     model: '=',
-    required: '@'
+    required: '@',
+    error: '='
   },
   templateUrl: './email.html'
 };

@@ -5,10 +5,37 @@
 
     <div class="list">
       <form name="userInformations">
-        <input-cep placeholder="12345-678" label="CEP" model="$ctrl.cep" required="true"></input-cep>
-        <input-cpf placeholder="123.456.789-01" label="CPF" model="$ctrl.cpf" required="true"></input-cpf>
-        <input-email placeholder="me@amazing.com" label="E-mail" model="$ctrl.email" required="true"></input-email>
-        <input-phone placeholder="(00) 12345-6789" label="Phone" model="$ctrl.phone" required="true"></input-phone>
+        <input-cep
+          placeholder="12345-678"
+          label="CEP"
+          model="$ctrl.cep"
+          required="true"
+          error="userInformations.$error.cep">
+        </input-cep>
+
+        <input-cpf
+          placeholder="123.456.789-01"
+          label="CPF"
+          model="$ctrl.cpf"
+          required="true"
+          error="userInformations.$error.cpf">
+        </input-cpf>
+
+        <input-email
+          placeholder="me@amazing.com"
+          label="E-mail"
+          model="$ctrl.email"
+          required="true"
+          error="userInformations.$error.email">
+        </input-email>
+
+        <input-phone
+          placeholder="(00) 12345-6789"
+          label="Phone"
+          model="$ctrl.phone"
+          required="true"
+          error="userInformations.$error.brPhoneNumber">
+        </input-phone>
 
         <ul class="list">
           <li class="item item-toggle">

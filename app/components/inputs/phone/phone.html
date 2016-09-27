@@ -2,3 +2,8 @@
   <span class="input-label">{{$ctrl.label}}</span>
   <input type="text" placeholder="{{$ctrl.placeholder}}" ng-model="$ctrl.phone" required="$ctrl.required" ui-br-phone-number>
 </label>
+
+<div class="error" ng-message="required" ng-if="$ctrl.error[0].$touched && $ctrl.error[0].$invalid">
+  <i class="ion-information-circled"></i>
+  This field is required or it's invalid!
+</div>

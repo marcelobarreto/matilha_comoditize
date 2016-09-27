@@ -3,7 +3,8 @@ var inputCpf = {
     placeholder: '@',
     label: '@',
     model: '=',
-    required: '@'
+    required: '@',
+    error: '='
   },
   templateUrl: './cpf.html'
 };
